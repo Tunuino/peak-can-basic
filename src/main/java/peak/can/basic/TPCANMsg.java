@@ -69,7 +69,7 @@ public class TPCANMsg implements Cloneable
         _data = new byte[8];
     }
 
-    // tunuino custom https://github.com/tunuino/tunuino/issues/4370 workaround
+    // Tunuino: allow CAN message payload allocation with a specified length.
     public TPCANMsg(byte length)
     {
         _data = new byte[length];
